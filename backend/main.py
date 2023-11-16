@@ -3,8 +3,8 @@ from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import insert
 
-from database import AsyncSessionLocal
-from models.models import ChatMessage
+from .db import AsyncSessionLocal
+from .models.models import ChatMessage
 
 app = FastAPI()
 
