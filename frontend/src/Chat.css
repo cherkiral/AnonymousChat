@@ -1,0 +1,100 @@
+/* Chat.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Darker background */
+}
+
+.chat-window {
+  width: 95%; /* Increase the width as per your design */
+  max-width: 800px; /* Increase the maximum width as needed */
+  max-height: 80vh; /* Adjust the maximum height to control how tall the chat window can be */
+  overflow-y: auto; /* Add scroll for overflow */
+  background-color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.chat-header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.messages-list {
+  list-style: none;
+  padding: 0;
+  max-height: 580px; /* Adjusted for better spacing */
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.message-sender {
+  display: block;
+  font-size: 0.8rem; /* Smaller font size for sender */
+  color: #706e6e; /* Subtle color for the sender's ID or name */
+  margin-bottom: 4px; /* Space between sender and message */
+}
+
+.message-item {
+  background-color: #444; /* Slightly darker background for messages */
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  max-width: 70%; /* Ensures messages do not span the full width of the chat window */
+  padding-top: 0;
+  text-align: left;
+}
+
+.my-message {
+  margin-left: auto; /* Aligns your messages to the right */
+  background-color: #4a4a4a;
+  text-align: right;/* Different shade for own messages */
+}
+
+.message-form {
+  display: flex;
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #222; /* Darker input field */
+  color: #ddd; /* Lighter text color for contrast */
+}
+
+.send-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #555; /* Darker button */
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #666; /* Slightly lighter on hover */
+}
+
+/* Custom scrollbar for messages list */
+.messages-list::-webkit-scrollbar {
+  width: 6px; /* Thinner scrollbar */
+}
+
+.messages-list::-webkit-scrollbar-thumb {
+  background-color: #555; /* Dark scrollbar handle */
+  border-radius: 10px;
+}
+
+.messages-list::-webkit-scrollbar-track {
+  background-color: #333; /* Dark scrollbar track */
+}
